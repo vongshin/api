@@ -1,0 +1,14 @@
+[
+  {
+    "name": "CustomRes",
+    "md5": "7b88866eeace63c50b8cd798f4756d69",
+    "url": "ota/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns",
+    "modules": [
+      {
+        "name": "CustomRes",
+        "version": "1.5.0",
+        "path": "/EPT_System"
+      }
+    ]
+  }
+]
