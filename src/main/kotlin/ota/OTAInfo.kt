@@ -1,12 +1,11 @@
 package ota
 
-import com.google.gson.annotations.SerializedName
-import ota.Module
-
 class OTAInfo {
-    var name:String? = null
-    var md5:String? = null
-    var url:String? = null
+    var name: String? = null
+    var md5: String? = null
+    var size: String? = null
+    var url: String? = null
+    var model: List<String> = listOf("A8", "A8S")
     var modules: List<Module>? = null
-
+    var description: String? = null
 }
