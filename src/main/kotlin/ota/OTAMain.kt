@@ -3,8 +3,8 @@ package me.vongshin.ota
 import me.vongshin.getRootPath
 import me.vongshin.writeAnyToFile
 import org.apache.commons.codec.digest.DigestUtils
-import ota.OTAInfo
-import ota.module
+import ota.UpdateModule
+import ota.UpdateInfo
 import java.io.File
 import java.io.FileInputStream
 import java.math.BigDecimal
@@ -12,9 +12,10 @@ import java.math.RoundingMode
 
 const val JSON_FILE_NAME = "ota/ota.json"
 fun otaMain(){
-    val otaInfos = listOf(
-        OTAInfo().apply {
-            name = "CustomRes"
+    val updateInfos = listOf(
+        UpdateInfo().apply {
+            name = "工行客户定制资源包"
+            label = "CustomRes"
             url = "ota/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns"
             model = listOf("A8S")
             md5 = md5Hex("${getRootPath()}/$url")
@@ -28,8 +29,9 @@ fun otaMain(){
                 "CustomRes" module "1.5.0"
             )
         },
-        OTAInfo().apply {
-            name = "LocationInfo"
+        UpdateInfo().apply {
+            name = "位置信息开关设置"
+            label = "LocationInfo"
             url = "ota/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg"
             model = listOf("A8")
             md5 = md5Hex("${getRootPath()}/$url")
@@ -45,10 +47,10 @@ fun otaMain(){
         }
     )
     //
-    writeAnyToFile(otaInfos, JSON_FILE_NAME)
+    writeAnyToFile(updateInfos, JSON_FILE_NAME)
 
 }
-
+public infix fun String.module(that: String): UpdateModule = UpdateModule(this, that)
 fun md5Hex(name: String): String = DigestUtils.md5Hex(FileInputStream(name)).uppercase()
 
 fun calSize(name: String): String{

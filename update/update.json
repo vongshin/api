@@ -1,6 +1,7 @@
 [
   {
-    "name": "CustomRes",
+    "name": "工行客户定制资源包",
+    "label": "CustomRes",
     "md5": "7B88866EEACE63C50B8CD798F4756D69",
     "size": "2.82 MB",
     "url": "ota/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns",
@@ -17,7 +18,8 @@
     "description": "客户资源包:\n1、支持中石油明文PIN"
   },
   {
-    "name": "LocationInfo",
+    "name": "位置信息开关设置",
+    "label": "LocationInfo",
     "md5": "DE7EA2CA77FFFC78A1C2770C59D06A5D",
     "size": "3.18 KB",
     "url": "ota/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg",
