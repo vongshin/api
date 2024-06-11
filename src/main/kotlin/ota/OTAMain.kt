@@ -27,8 +27,24 @@ fun otaMain(){
             modules = listOf(
                 "CustomRes" module "1.5.0"
             )
+        },
+        OTAInfo().apply {
+            name = "LocationInfo"
+            url = "ota/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg"
+            model = listOf("A8")
+            md5 = md5Hex("${getRootPath()}/$url")
+            size = calSize("${getRootPath()}/$url")
+            description =
+                """
+                    位置信息:
+                    1、默认打开位置信息
+                """.trimIndent()
+            modules = listOf(
+                "gps_on" module "1.0.0"
+            )
         }
     )
+    //
     writeAnyToFile(otaInfos, JSON_FILE_NAME)
 
 }

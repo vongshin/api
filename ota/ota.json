@@ -15,5 +15,22 @@
       }
     ],
     "description": "客户资源包:\n1、支持中石油明文PIN"
+  },
+  {
+    "name": "LocationInfo",
+    "md5": "DE7EA2CA77FFFC78A1C2770C59D06A5D",
+    "size": "3.18 KB",
+    "url": "ota/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg",
+    "model": [
+      "A8"
+    ],
+    "modules": [
+      {
+        "name": "gps_on",
+        "version": "1.0.0",
+        "path": "/EPT_System"
+      }
+    ],
+    "description": "位置信息:\n1、默认打开位置信息"
   }
 ]
