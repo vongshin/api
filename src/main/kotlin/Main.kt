@@ -2,14 +2,14 @@ package me.vongshin
 
 import com.google.gson.GsonBuilder
 import me.vongshin.config.configMain
-import me.vongshin.ota.otaMain
+import update.updateMain
 import java.io.File
 import java.io.FileWriter
 
 
 fun main(){
     configMain()
-    otaMain()
+    updateMain()
     println("finish")
 }
 

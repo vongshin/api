@@ -4,7 +4,7 @@
     "label": "CustomRes",
     "md5": "7B88866EEACE63C50B8CD798F4756D69",
     "size": "2.82 MB",
-    "url": "ota/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns",
+    "url": "update/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns",
     "model": [
       "A8S"
     ],
@@ -22,7 +22,7 @@
     "label": "LocationInfo",
     "md5": "DE7EA2CA77FFFC78A1C2770C59D06A5D",
     "size": "3.18 KB",
-    "url": "ota/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg",
+    "url": "update/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg",
     "model": [
       "A8"
     ],

@@ -1,4 +1,4 @@
-package ota
+package update
 
 data class UpdateModule(
     val name: String,

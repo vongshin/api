@@ -1,4 +1,4 @@
-package ota
+package update
 
 class UpdateInfo {
     var name: String? = null
