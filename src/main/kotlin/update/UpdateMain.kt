@@ -17,7 +17,7 @@ fun updateMain(){
             name = "工行客户定制资源包"
             label = "CustomRes"
             url = "update/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns"
-            model = listOf("A8S")
+            model = listOf("A8S", "APOS A8S")
             md5 = md5Hex("${getRootPath()}/$url")
             size = calSize("${getRootPath()}/$url")
             description =
@@ -33,7 +33,7 @@ fun updateMain(){
             name = "位置信息开关设置"
             label = "LocationInfo"
             url = "update/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg"
-            model = listOf("A8")
+            model = listOf("A8", "APOS A8")
             md5 = md5Hex("${getRootPath()}/$url")
             size = calSize("${getRootPath()}/$url")
             description =

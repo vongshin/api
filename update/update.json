@@ -6,7 +6,8 @@
     "size": "2.82 MB",
     "url": "update/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns",
     "model": [
-      "A8S"
+      "A8S",
+      "APOS A8S"
     ],
     "modules": [
       {
@@ -24,7 +25,8 @@
     "size": "3.18 KB",
     "url": "update/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg",
     "model": [
-      "A8"
+      "A8",
+      "APOS A8"
     ],
     "modules": [
       {
