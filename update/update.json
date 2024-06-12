@@ -2,9 +2,9 @@
   {
     "name": "工行客户定制资源包",
     "label": "CustomRes",
+    "url": "update/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns",
     "md5": "7B88866EEACE63C50B8CD798F4756D69",
     "size": "2.82 MB",
-    "url": "update/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns",
     "model": [
       "A8S",
       "APOS A8S"
@@ -21,9 +21,9 @@
   {
     "name": "位置信息开关设置",
     "label": "LocationInfo",
+    "url": "update/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg",
     "md5": "DE7EA2CA77FFFC78A1C2770C59D06A5D",
     "size": "3.18 KB",
-    "url": "update/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg",
     "model": [
       "A8",
       "APOS A8"
@@ -36,5 +36,49 @@
       }
     ],
     "description": "位置信息:\n1、默认打开位置信息"
+  },
+  {
+    "name": "支付模块更新",
+    "label": "EpayUpdate",
+    "url": "update/EpayUpdate/APOS-EpayUpdate-V245-5.0.173-20231225.uns",
+    "md5": "89162F210F29E596E50519571F012B3E",
+    "size": "59.39 MB",
+    "model": [
+      "A8",
+      "APOS A8"
+    ],
+    "modules": [
+      {
+        "name": "s-module",
+        "version": "2..18.16",
+        "path": "/EPT_System"
+      },
+      {
+        "name": "libEMV",
+        "version": "1.5.22",
+        "path": "/EPT_System"
+      },
+      {
+        "name": "masterControl",
+        "version": "1.4.0",
+        "path": "/EPT_System"
+      },
+      {
+        "name": "gps_on",
+        "version": "1.0.0",
+        "path": "/EPT_System"
+      },
+      {
+        "name": "pinpad",
+        "version": "4.6.1",
+        "path": "/EPT_System"
+      },
+      {
+        "name": "EMVKernel",
+        "version": "210318",
+        "path": "/EPT_System"
+      }
+    ],
+    "description": "支付模块:\n1、添加A8支持国密"
   }
 ]

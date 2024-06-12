@@ -18,8 +18,6 @@ fun updateMain(){
             label = "CustomRes"
             url = "update/CustomRes/CustomRes_ICBC_AND-S1-DELTA_1.5.0_20240529.uns"
             model = listOf("A8S", "APOS A8S")
-            md5 = md5Hex("${getRootPath()}/$url")
-            size = calSize("${getRootPath()}/$url")
             description =
                 """
                     客户资源包:
@@ -34,8 +32,6 @@ fun updateMain(){
             label = "LocationInfo"
             url = "update/LocationInfo/APOS_GPS_on-NETWORKOnly.pkg"
             model = listOf("A8", "APOS A8")
-            md5 = md5Hex("${getRootPath()}/$url")
-            size = calSize("${getRootPath()}/$url")
             description =
                 """
                     位置信息:
@@ -44,7 +40,26 @@ fun updateMain(){
             modules = listOf(
                 "gps_on" module "1.0.0"
             )
-        }
+        },
+        UpdateInfo().apply {
+            name = "支付模块更新"
+            label = "EpayUpdate"
+            url = "update/EpayUpdate/APOS-EpayUpdate-V245-5.0.173-20231225.uns"
+            model = listOf("A8", "APOS A8")
+            description =
+                """
+                    支付模块:
+                    1、添加A8支持国密
+                """.trimIndent()
+            modules = listOf(
+                "s-module" module "2..18.16",
+                "libEMV" module "1.5.22",
+                "masterControl" module "1.4.0",
+                "gps_on" module "1.0.0",
+                "pinpad" module "4.6.1",
+                "EMVKernel" module "210318"
+            )
+        },
     )
     //
     writeAnyToFile(updateInfos, JSON_FILE_NAME)

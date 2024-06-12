@@ -23,4 +23,4 @@ fun writeAnyToFile(obj: Any, path: String){
     fw.close()
 }
 
-fun getRootPath() = System.getProperty("user.dir")
+fun getRootPath(): String = System.getProperty("user.dir")

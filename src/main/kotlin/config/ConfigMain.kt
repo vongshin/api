@@ -1,11 +1,7 @@
 package me.vongshin.config
 
-import com.google.gson.GsonBuilder
 import config.Config
-import me.vongshin.getRootPath
 import me.vongshin.writeAnyToFile
-import java.io.File
-import java.io.FileWriter
 
 const val JSON_FILE_NAME = "config.json"
 fun configMain() {
